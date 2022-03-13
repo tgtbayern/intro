@@ -8,12 +8,10 @@ for key,value in characterB.items():
 #Test something else about dictionary,not required in the tutorials
 
 #access dictionary
-print(characterB["strengeth"])
+print(characterB["strength"])
 #print whole dictionary
 print(characterB)
-#print key and value seperately
-for key,value in characterB.items():
-    print(key,value)
+
 #add something in dictionary
 for i in range(6):
     characterB[keys[i]]=random.randint(0,20)
@@ -24,4 +22,16 @@ print(characterB)
 #delete Key/value pair
 del characterB["strengeth"]
 print(characterB)
+#get() method to access the dictionary
+message1=characterB.get("strength","No such key")
+print(message1)
+message2=characterB.get("speed","No such key")
+print(message2)
+#traverse
+for key,value in characterB.items():
+    print(key,value)
+for key in characterB.keys():
+    print(key)
+for value in characterB.values():
+    print(value)
 
