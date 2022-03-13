@@ -7,8 +7,7 @@ characterA={"strength":10,
 for key,value in characterA.items():
     print(key,value)
 print(characterA)
-for key in characterA.keys():
-    if key=="strength":
-        print("The strengeth is",characterA["strength"])
-    if key=="speed":
-        print("The speed is",characterA["speed"])
+message1=characterA.get("strength","No such key")
+print(message1)
+message2=characterA.get("speed","No such key")
+print(message2)
