@@ -4,4 +4,6 @@ for key,value in characterA.items():
 print(characterA)
 for key in characterA.keys():
     if key=="strength":
-        print(characterA["strength"])
+        print("The strengeth is",characterA["strength"])
+    if key=="speed":
+        print("The speed is",characterA["speed"])
