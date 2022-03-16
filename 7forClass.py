@@ -1,4 +1,4 @@
-from random import random
+import random
 
 
 class Character:
@@ -32,6 +32,16 @@ class Character:
         
     def heal(self,healValue):
         self.hitpoint+=healValue
+
+if __name__ == "__main__":
+    characterA=Character(6,7,8,9,10,11)
+    characterA.show_hitpoints()
+    characterA.heal(10)
+    characterA.show_hitpoints()
+    characterA.show_stats()
+    characterA.defence(15)
+    characterA.show_stats()
+   
 
 
 
