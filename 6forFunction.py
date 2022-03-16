@@ -1,6 +1,3 @@
-from cgitb import reset
-
-
 def converts(celcius):
     result=celcius*9/5+32
     return result
