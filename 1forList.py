@@ -4,6 +4,7 @@ for programming_language in programing_languages:
 print(f"I leard {programing_languages[0]} and {programing_languages[2]} before,so they are good "+
 f"but I haven't leared {programing_languages[3]} and {programing_languages[4]} and {programing_languages[5]}"+
 f" and {programing_languages[6]}, so they are bad,so I'll delete them")
+#Code below is not required for the homework
 #Test pop here
 for i in range(3):
     programing_languages.pop()
