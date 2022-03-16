@@ -23,6 +23,17 @@ class Character:
         print("hitpoint",self.hitpoint)
 
     def attack(self):
-        print(random.randint(1,self.strength))
+        return random.randint(1,self.strength)
+    
+    def defence(self,defen):
+        a=random.randint(0,20)
+        if(a>=self.dexterity):
+            defen=defen-self.attack
+        
+    def heal(self,healValue):
+        self.hitpoint+=healValue
+
+
+
 
    
