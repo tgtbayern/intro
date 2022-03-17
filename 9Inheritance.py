@@ -1,3 +1,6 @@
+import random
+
+
 class Character:
     def __init__(self,strength, dexterity, constitution, intelligence, wisdom, charisma):
         self.strength=strength
@@ -34,3 +37,21 @@ class MagicCharacter(Character):
     def __init__(self, strength, dexterity, constitution, intelligence, wisdom, charisma):
         super().__init__(strength, dexterity, constitution, intelligence, wisdom, charisma)
         mana= intelligence * 30 + 50
+
+    def show_mana(self):
+        print("mana",self.mana)
+    
+    def magicMissile(self):
+        self.mana-=5
+        return random.randint(5,10)
+
+    def fireball(self):
+        self.mana-=10
+        return random.randint(10,20)
+
+    def healMana(self,healValue):
+        mana+=healValue
+    
+
+
+
